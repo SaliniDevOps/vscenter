@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: #edf1f4;
+}
+
+.main-container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    background: url(image/pngtree-auto-maintenance-technology-picture-image_2401508.jpg) no-repeat center bottom;
+    background-size: cover;
+}
+
+.background-image::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.main-title-content {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+}
+
+.logo-container .logo {
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    text-decoration: none;
+    text-shadow: 2px 2px 1px #B9840A;
+    color: #fff;
+}
+
+.right-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-booking-content {
+    background: #edf1f4;
+    width: 80%;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -15px -15px 20px #fffb;
+    text-align: center;
+}
+
+.service-booking-content form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.service-booking-content .title {
+    width: 100%;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.service-booking-content h2 {
+    font-size: 2em;
+    font-family: "Orbitron", sans-serif;
+    color: #000;
+}
+
+.inputbox {
+    position: relative;
+    flex: 1 1 48%;
+}
+
+.inputbox input,
+.inputbox select,
+.inputbox textarea {
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 10px;
+    font-size: 1em;
+    width: 100%;
+    padding: 15px 50px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
+}
+
+.inputbox i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000;
+}
+
+.inputbox .ri-chat-3-fill {
+    padding-bottom: 3.8em;
+}
+
+.inputbox input[type="submit"] {
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff;
+}
+
+.inputbox input[type="submit"]:focus {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
+    color: #B9840A;
+}
+
+.signup-content {
+    margin-top: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+.signup-content p a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.signup-content p a:hover {
+    color: #B9840A;
+}
+
+.home-button-content,
+.button-content {
+    flex: 1;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.home-button-content a {
+    display: inline-block;
+    width: 100%;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff;
+    transition: 0.3s;
+}
+
+.home-button-content a:hover {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
+    color: #B9840A;
+}
+
+.home-button-content a,
+.button-content a {
+    display: inline-block;
+    width: 100%;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff;
+    transition: 0.3s;
+}
+
+.home-button-content a:hover,
+.button-content a:hover {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
+    color: #B9840A;
+    cursor: pointer;
+}
+
+.ri-settings-2-fill{
+    padding-bottom: 3.6em;
+}
+/* Add styles for the popup modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background: #edf1f4;
+    margin: 5% auto;
+    padding: 15px 35px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.modal .modal-content h3{
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+
+.modal .modal-content select{
+    margin-bottom: 1em;
+    background: transparent;
+    width: 20%;
+    padding: 10px 20px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.modal .modal-content button{
+    margin-left: 1em;
+    padding: 10px 20px;
+    width: 8%;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.modal .modal-content #servicesTable{
+    margin-top: 1em;
+    outline: none;
+}
+
+.modal .modal-content #servicesTable thead tr th{
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+.modal .modal-content button:hover{
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
+    color: #B9840A;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+.delete-btn {
+    padding: 10px 25px;
+    width: 0%;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.delete-btn:hover{
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
+    color: red;
+    cursor: pointer;
+}
+

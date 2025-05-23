@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Montserrat", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Freeman", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+/* font-family: "Orbitron", sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+}
+
+/* Image container styling */
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Main container styling */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+}
+
+/* Title animation */
+.title {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeInDown 1s ease-out forwards;
+}
+
+.title h1{
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    text-shadow: 2px 2px 2px #B9840A;
+}
+
+/* Subtitle animation */
+.home-page-title {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeInDown 1s ease-out 0.5s forwards;
+}
+
+/* Button container animation */
+.home-link {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeInDown 1s ease-out 1s forwards;
+}
+
+/* Button styling */
+.cta-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #FFBC21;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #B9840A;
+}
+
+/* Keyframes for the animations */
+@keyframes fadeInDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    .title h1 {
+        font-size: 1.5em;
+    }
+
+    .home-page-title h2 {
+        font-size: 1.2em;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
